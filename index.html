@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Carousel Template · Bootstrap v5.0</title>
-
+    <link rel="stylesheet" href="main.css">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
     
@@ -41,26 +41,22 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
+      <a class="navbar-brand" href="#">Web-Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" id="skills-link" aria-current="page" href="#">Навыки</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" id="projects-link" href="#">Проекты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" id="callback-link" href="#" tabindex="-1" aria-disabled="true">Связаться</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -68,56 +64,25 @@
 
 <main>
 
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+  <header style="min-height: 500px; background: url('images/bgHeader.svg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex justify-content-center mt-5">
+            <img src="images/svphoto.jpg" class="photo shadow-lg" alt="">
           </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        <div class="col-lg-6 my-auto">
+          <div class="d-flex justify-content-start mt-5">
+            <h1>Артём Суров</h1>
           </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
+          <p><p>Всем привет, я Артём суров - начинающий веб-дизайнер, на данной,
+          странице вы можете посмотреть сделаные мною проекты, а так же найти
+          всю необходимую контактную информацию, чтобы связаться со мной</p></p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </header>
 
 
   <!-- Marketing messaging and featurettes
@@ -126,28 +91,32 @@
 
   <div class="container marketing">
 
+    <div class="row">
+      <div class="col-12 text-center my-5" id="skills-section">
+        <h1>Мои основные навыки</h1>
+      </div>
+    </div>
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <img src="images/photoshop-cc-logo-svgrepo-com.svg" width="150" alt="">
+        
+        <h2 class="my-3">Adobe Photoshop</h2>
+        <p>Предрочитаю использовать Adobe Photoshop для редактирования изображений сайта и разработки анимаций.</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="images/css3-svgrepo-com.svg" width="150" alt="">
 
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+
+        <h2 class="my-3">CSS 3</h2>
+        <p>Обладаю средними навыками в CSS3 и HTML5 как верстальщик, но этого хватает для создания большинства макетов.</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <img src="images/figma-svgrepo-com.svg" width="150" alt="">
+
+        <h2 class="my-3">Figma</h2>
+        <p>Я умею создавать макеты средней сложности сайтов и отдельных их компонентов пользуясь функционалом Figma</p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -156,14 +125,27 @@
 
     <hr class="featurette-divider">
 
+    <div class="row">
+      <div class="col-12 text-center my-5" id="projects-section">
+        <h1>Мои работы</h1>
+      </div>
+    </div>
+
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2>Макет сайта "Автосервис"</h2>
+        <p class="lead mx-3">Дизайн макета, выполненный в Figma в рамках одного из учебных проектов.
+          Представляет собой макеты многостраничного сайта выполненные с соблюдением
+          некоторых особенностей разработки сайта под язык Golang. Дизайн подобран в
+          соответствии с предметной областью и особымии требованиями заказчика,
+          является хорошим примером для демонстрации умений создания дизайн-решений</p>
+
+        <a href="https://www.figma.com/file/XshYtlXY1CP4D0AyEu1ZTM/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%812?t=DVglsQOTwXjByZ0z-1" class="btn btn-secondary mx-3" type="button">
+          Перейти »
+        </a>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="images/service.png" width="500" height="500" alt="">
       </div>
     </div>
 
@@ -171,11 +153,22 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2>Макет "Веб-портфолио фотографа"</h2>
+        <p class="lead mx-3">Этот макет, демонстрирующий мои навыки дизайна нестандартных макетов.
+          Ключевой особенностью и сложностью этой работы является несимметричность и
+          линий и высоты-ширины блоков изображений и текста. Это вызывает требования к
+          точности и креативности при выборе элементов и их расположения, чтобы создать
+          эффективный и привлекательный дизайн. Я также использовал нестандартные цвета
+          и шрифты, чтобы сделать дизайн еще более интересным и выделиться среди других.
+          В целом, этот макет показывает мое умение создавать нестандартные и
+          оригинальные дизайны, используя свои навыки и креативность.</p>
+
+        <a href="https://www.figma.com/file/ozlVa37rOnRwpqBfft1ipP/Grebenkina-Laba-4?node-id=0%3A1&t=DVglsQOTwXjByZ0z-1" class="btn btn-secondary mx-3"   type="button">
+          Перейти »
+        </a>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img src="images/photograph.png" width="500" height="500" alt="">
 
       </div>
     </div>
@@ -184,32 +177,127 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2>Дизайн блок-схем</h2>
+        <p class="lead mx-3">В работе дизайнерам иногда нужно правильно презентовать какой-нибудь
+          квартальный отчёт или подобрать стилистику слайдов для презентации. Этот проект
+          демонстрирует мои навыки по оформлению блок-схем, графиков, таблиц и других
+          данных. Я учтен особенности индустрии и бизнес-аудитории, а также выбор
+          подходящих цветов, шрифтов и расположения элементов, чтобы создать
+          высококачественный и профессиональный дизайн. В дополнение, я использовал
+          навыки в обработке изображений, чтобы оптимизировать графики и изображения
+          для лучшей визуализации.</p>
+
+        <a href="https://www.figma.com/file/P5zjfoB138TnWIIq3J5sXY/FigJam-Basics?t=DVglsQOTwXjByZ0z-1" class="btn btn-secondary mx-3" type="button">
+          Перейти »
+        </a>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="images/blockschemas.png" width="500" height="500" alt="">
       </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
+    <div class="row">
+      <div class="col-12 text-center my-5">
+        <h1>Контактные данные</h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-6">
+
+        <h2 id="callback-section" style="font-size: 26px">Контактная информация</h2>
+        <table>
+          <tr>
+            <td>ФИО:</td>
+            <td>Суров Артём Владимирович</td>
+          </tr>
+          <tr>
+            <td>Страна:</td>
+            <td>Россия</td>
+          </tr>
+          <tr>
+            <td>Город:</td>
+            <td>Волгоград</td>
+          </tr>
+          <tr>
+            <td>Возраст:</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>surov.tema2016@yandex.ru</td>
+          </tr>
+          <tr>
+            <td>Город:</td>
+            <td>Волгоград</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-lg-6 col-sm-12">
+        <h2 class="text-center" style="font-size: 26px">Связь</h2>
+
+        <form class="needs-validation" method="POST" action="send_message.php" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Имя</label>
+              <input type="text" name="firstName" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Отчество</label>
+              <input type="text" name="lastName" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row">
+                <label for="message" class="form-label">Сообщение</label>
+              </div>
+              <textarea id="message" name="message" class="w-100 form-control" rows="3" type="text"></textarea>
+            </div>
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" style="max-width: 300px" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
   </div><!-- /.container -->
 
 
   <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  <footer class="container mt-5">
+    <p class="float-end"><a href="#">Наверх</a></p>
+    <div class="d-flex gap-3">
+      <p class="align-middle">&copy; 2023 Surov, Inc. &middot;</p>
+      <a href="https://vk.com/malaya_212"><img src="images/vk.svg" width="50" alt=""></a>
+      <a href="https://t.me/Ahkudibek"><img src="images/tg.svg" width="50" alt=""></a>
+    </div>
   </footer>
 </main>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
       
   </body>
 </html>

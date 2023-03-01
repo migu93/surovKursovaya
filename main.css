@@ -1,0 +1,30 @@
+.photo {
+    width: 300px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+td:first-child, th:first-child {
+    border-left: none;
+}
+td:last-child, th:last-child {
+    border-right: none;
+}
+tr {
+    border-bottom: 1px solid black;
+}
